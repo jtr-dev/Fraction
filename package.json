@@ -1,0 +1,11 @@
+{
+  "name": "roof",
+  "version": "0.0.1",
+  "private": true,
+  "main":"app/main.js",
+  "devDependencies": {
+    "shadow-cljs": "2.8.52",
+    "electron": "6.0.7"
+  },
+  "dependencies": {}
+}
