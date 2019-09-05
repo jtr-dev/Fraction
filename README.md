@@ -28,3 +28,4 @@ you can open a local electron to view the app
 cd vscode-remote-try-clojurescript
 electron .
 ```
+![](snapshot.png)
