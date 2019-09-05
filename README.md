@@ -12,7 +12,7 @@ The demo project of clojurescript remote development with vscode.
 git clone vscode-remote-try-clojurescript
 cd vscode-remote-try-clojurescript
 code vscode-remote-try-clojurescript
-'Open Folder in Container'
+'Open in Container'
 ```
 
 then open bash terminal and run:
