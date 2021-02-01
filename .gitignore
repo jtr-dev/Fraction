@@ -2,7 +2,8 @@ node_modules/
 app/js
 app/main.js
 app/server.js
-
+.shadow-cljs/
+sqlite*
 /target
 /checkouts
 /src/gen
@@ -22,7 +23,4 @@ pom.xml.asc
 .hg/
 .clj-kondo
 .calva
-
-.shadow-cljs/
-
 .devcontainer/devcontainer.json
