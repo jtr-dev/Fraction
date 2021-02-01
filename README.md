@@ -1,31 +1,41 @@
-# vscode-remote-try-clojurescript
-The demo project of clojurescript remote development with vscode.
+# Fraction
 
-## Libs / Tools 
-- shadow-cljs
-- electron 
-- docker
+WIP project template
 
+## Libs / Tools
+
+-   reagent
+-   shadow-cljs
+-   express
+-   electron
+-   docker
 
 ## Development
+
 ```
-git clone vscode-remote-try-clojurescript
-cd vscode-remote-try-clojurescript
-code vscode-remote-try-clojurescript
+git clone refraction
+cd refraction
+code refraction
 'Open in Container'
 ```
 
-then open bash terminal and run:
+then open local bash terminal and run:
 
 ```
-yarn 
+yarn
 npx shadow-cljs watch main ui
 ```
+which is the same as  
+```
+npm i -g shadow-cljs
+npm start
+```
 
-you can open a local electron to view the app
+from there you can open a local electron to view the app
 
 ```
-cd vscode-remote-try-clojurescript
+cd refraction
 electron .
 ```
+
 ![](snapshot.png)

@@ -1,5 +1,7 @@
 node_modules/
 app/js
+app/main.js
+app/server.js
 
 /target
 /checkouts
@@ -18,5 +20,9 @@ pom.xml.asc
 
 .hgignore
 .hg/
+.clj-kondo
+.calva
 
 .shadow-cljs/
+
+.devcontainer/devcontainer.json

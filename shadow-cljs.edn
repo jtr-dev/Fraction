@@ -4,13 +4,23 @@
   "src/test"]
 
  :dependencies
- []
+ [[reagent "0.10.0"]
+  [binaryage/devtools "0.9.10"]]
 
  :builds
  {:main
   {:target :node-script
    :output-to "app/main.js"
-   :main vstry.electron.core/main}
+   :main refraction.electron.main/main}
+
+  :server
+  {:target :node-script
+   :output-to "app/server.js"
+   :main refraction.server/main
+
+   :devtools
+   {:before-load refraction.server/stop
+    :after-load  refraction.server/start}}
 
   :ui
   {:target :browser
@@ -18,11 +28,11 @@
    :asset-path "js"
 
    :modules
-   {:ui {:entries [vstry.ui.core]}}
+   {:ui {:entries [refraction.ui.app]
+         :init-fn refraction.ui.app/init}}
 
    :devtools
-   {:before-load vstry.ui.core/stop
-    :after-load vstry.ui.core/start
+   {:before-load refraction.ui.app/stop
+    :after-load refraction.ui.app/start
     :http-root "app"
-    :http-port 3003}}
-  }}
+    :http-port 3003}}}}

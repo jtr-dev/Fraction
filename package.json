@@ -1,11 +1,18 @@
 {
-  "name": "roof",
+  "name": "refraction",
   "version": "0.0.1",
   "private": true,
-  "main":"app/main.js",
-  "devDependencies": {
-    "shadow-cljs": "2.8.52",
-    "electron": "6.0.7"
+  "main": "app/main.js",
+  "scripts": {
+    "start": "shadow-cljs watch main ui"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "electron": "6.0.7",
+    "shadow-cljs": "2.8.52"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }

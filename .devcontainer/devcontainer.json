@@ -19,6 +19,8 @@
     "postCreateCommand": "yarn install",
 
     "extensions": [
-        "dbaeumer.vscode-eslint"
-    ]
+		"betterthantomorrow.calva",
+		"avli.clojure",
+		"marcomorain.clojure-lint"
+	]
 }
